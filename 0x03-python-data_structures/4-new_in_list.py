@@ -5,3 +5,4 @@ def new_in_list(my_list, idx, element):
     else:
         temp[idx] = element
         return temp
+    return my_list
