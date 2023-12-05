@@ -20,7 +20,7 @@ def sub(a, b):
     b: second integer
 
     Returns
-    The return value. a - 
+    The return value. a - b
     """
     return (a - b)
 
