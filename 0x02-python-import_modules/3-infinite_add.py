@@ -5,4 +5,4 @@ x = 1
 while x < len(sys.argv):
     result += int(sys.argv[x])
     x += 1
-print(result)
+print("{}".format(result))
