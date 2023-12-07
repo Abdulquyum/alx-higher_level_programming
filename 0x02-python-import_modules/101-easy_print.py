@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print( "#pythoniscool" )
+def comment():
+     print("#pythoniscool")
+
+comment()
