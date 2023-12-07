@@ -1,5 +1,2 @@
 #!/usr/bin/python3
-def comment():
-     print("#pythoniscool")
-
-comment()
+__import__('os').write(1, b"#ythoniscool\n")
