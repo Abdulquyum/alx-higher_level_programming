@@ -1,4 +1,6 @@
 def square_matrix_simple(matrix=[]):
     sqr = []
-    sqr = [[x ** 2] for x in matrix]]
+    for x in matrix:
+        z = [y ** 2 for y in x]
+        sqr.append(z)
     return sqr
