@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    """ A rectangle with width and height 
+    """ A rectangle with width and height
         also with calculated perimeter and area """
     def __init__(self, width=0, height=0):
         """ rectangle height and width value must be an integer
@@ -35,8 +35,10 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
+
     def area(self):
         return self.__width * self.__height
+
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
