@@ -6,6 +6,8 @@
 class Rectangle:
     """ A rectangle with width and height """
     def __init__(self, width=0, height=0):
+        """ rectangle values of width and height must be integers
+            and must be greater than 0 """
         self.__width = width
         self.__height = height
 
