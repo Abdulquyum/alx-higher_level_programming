@@ -52,5 +52,4 @@ class Rectangle:
                     print("#", end="")
                 if a != self.__height - 1:
                     print()
-        return ""
-        return ""
+        return " "
