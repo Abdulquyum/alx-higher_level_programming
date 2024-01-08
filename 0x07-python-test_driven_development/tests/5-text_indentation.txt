@@ -1,0 +1,50 @@
+Python 3.8.10 (default, Mar 15 2022, 12:22:08) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("""My name is Abdulquyum.2
+...     I live in Lagos. Really?/
+...     Am a student,""")
+My name is Abdulquyum.
+<BLANKLINE>
+2
+    I live in Lagos.
+<BLANKLINE>
+ Really?
+<BLANKLINE>
+/
+    Am a student,
+>>> text_indentation("""How old are you???/
+...     You are a boy../
+...     I like rice, beans and meat""")
+How old are you?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+/
+    You are a boy.
+<BLANKLINE>
+.
+<BLANKLINE>
+/
+    I like rice, beans and meat
+>>> text_indentation("""trying sevearal signs???/
+...     yeah...
+...     okay,,,""")
+trying sevearal signs?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+/
+    yeah.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+    okay,,,
