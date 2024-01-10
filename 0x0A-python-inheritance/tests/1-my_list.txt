@@ -14,4 +14,19 @@ Type "help", "copyright", "credits" or "license" for more information.
 [10, 15, 20, 25, 30]
 >>> print(my_list)
 [10, 15, 20, 25, 30]
+>>> my_list.append(1)
+>>> my_list.append(-5)
+>>> my_list.append()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: append() takes exactly one argument (0 given)
+>>> my_list.append(7)
+>>> my_list.append(-10)
+>>> my_list.append(6)
+>>> my_list
+[1, -5, 7, -10, 6]
+>>> my_list.print_sorted()
+[-10, -5, 1, 6, 7]
+>>> print(my_list)
+[1, -5, 7, -10, 6]
 >>>
