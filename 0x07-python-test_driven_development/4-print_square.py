@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" Prints square """
+
+
 def print_square(size):
+    ''' Module to print square with '#' representation '''
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     elif size < 0:
