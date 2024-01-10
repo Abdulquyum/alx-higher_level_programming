@@ -22,3 +22,5 @@ Traceback (most recent call last):
   File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 6, in say_my_name
     raise TypeError("last_name must be a string")
 TypeError: last_name must be a string
+>>> say_my_name("", "")
+My name is
