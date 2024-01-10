@@ -5,7 +5,6 @@
 class MyList(list):
     """ contain module to sort list
         in ascending order """
-    new_list = []
     def print_sorted(self):
         new_list = sorted(self)
         print(new_list)
