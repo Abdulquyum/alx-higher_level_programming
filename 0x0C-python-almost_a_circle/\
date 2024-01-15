@@ -9,23 +9,11 @@ from models.base import Base
 class Rectangle(Base):
     """ modules to define rectangle inheriting from Base """
     def __init__(self, width, height, x=0, y=0, id=None):
-        self.__height = height
         self.__width = width
+        self.__height = height
         self.__x = x
         self.__y = y
-        super().__init__(id)
-
-    @property
-    def height(self):
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
-        self.__height = value
+        Base.__init__(self, id)
 
     @property
     def width(self):
@@ -34,10 +22,22 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError("width must be integer")
+            raise TypeError("{} must be integer".format(self.__init))
         if value <= 0:
-            raise ValueError("width must be > 0")
+            raise ValueError("{} must be > 0".format(__width))
         self.__width = value
+
+    @property
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        if not isinstance(value, int):
+            raise TypeError("{} must be an integer".format(self.__height))
+        if value <= 0:
+            raise ValueError("{} must be > 0".format(self.__height))
+        self.__height = value
 
     @property
     def x(self):
@@ -46,7 +46,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         if value < 0:
-            raise ValueError("x must be >= 0")
+            raise ValueError("{} must be >= 0".format(self.__x))
         self.__x = value
 
     @property
@@ -56,5 +56,5 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         if value < 0:
-            raise ValueError("y must be >= 0")
+            raise ValueError("{} must be >= 0".format(self.__y))
         self.__y = value
