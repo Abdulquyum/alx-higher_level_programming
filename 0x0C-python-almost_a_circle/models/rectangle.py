@@ -63,7 +63,25 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        for a in range(self.height):
-            for b in range(self.width):
+        for a in range(self.x):
+            print()
+        for b in range(self.height):
+            for c in range(self.y):
+                print(' ', end='')
+            for d in range(self.width):
                 print('#', end='')
             print()
+
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        try:
+            if len(args) > 0:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+        except Exception as s:
+            pass
