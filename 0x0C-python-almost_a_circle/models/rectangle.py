@@ -50,12 +50,9 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-<<<<<<< HEAD
+        ''' x setter func '''
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
-=======
-        ''' x setter func '''
->>>>>>> 1a49d0d51d35e9ee5b9c8488837191190bd8bc86
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
@@ -67,12 +64,9 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-<<<<<<< HEAD
+        ''' y setter mod '''
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
-=======
-        ''' y setter mod '''
->>>>>>> 1a49d0d51d35e9ee5b9c8488837191190bd8bc86
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
