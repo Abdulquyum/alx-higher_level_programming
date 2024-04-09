@@ -2,4 +2,10 @@
 
 const { argv } = require('process');
 
-console.log('My number: ' + argv[2]);
+let a = parseInt(argv[2]);
+
+if (!isNaN(a)) {
+  console.log('My number: ' + a);
+} else {
+  console.log("Not a number");
+}
