@@ -1,0 +1,1 @@
+This folder was created to perfect Object Relational Mapping in Python using MySQLdb and SQLAlchemy with the aim of eaiding coding. Rather than moving from one back-end language to another i.e Python to MySQl, these ORMs are used by writing MySQLdb or SQLAlchemy in python
