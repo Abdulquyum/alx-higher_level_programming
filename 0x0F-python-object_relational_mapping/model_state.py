@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
     define state and inherits from BAse class
+    Also includes instances of state like sevearal names
+    of different cities
 """
 
 from sqlalchemy.orm import declarative_base
@@ -12,7 +14,9 @@ Base = declarative_base(metadata=mymetadata)
 
 
 class state(Base):
-    """ state class with instances """
+    """ class definition of state class with
+        its instancesinstances
+    """
     __tablename__ = "states"
     id = Column(Integer, unique=True, autoincrement=True, primary_key=True)
     name = Column(String(128))
