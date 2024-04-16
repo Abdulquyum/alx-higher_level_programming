@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" define state and inherits from BAse class """
+"""
+    define state and inherits from BAse class
+"""
 
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import create_engine, Column, Integer, String
