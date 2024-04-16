@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ define state and inherits from BAse class """
 
 from sqlalchemy.orm import declarative_base
