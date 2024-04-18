@@ -13,3 +13,5 @@ if __name__ == "__main__":
              format(sys.argv[4]))
     cur.execute(query)
     [print(row) for row in cur.fetchall()]
+    conn.close()
+    cur.close()
