@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""
-    define state and inherits from BAse class
+'''
+    Define state and inherits from BAse class
     Also includes instances of state like sevearal names
     of different cities
-"""
+'''
 
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import create_engine, Column, Integer, String
