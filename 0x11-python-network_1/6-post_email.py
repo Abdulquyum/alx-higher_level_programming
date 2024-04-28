@@ -9,8 +9,9 @@ import requests
 import sys
 
 
-url = sys.argv[1]
-data = {'email': sys.argv[2]}
+if __name__ == "__main__":
+    url = sys.argv[1]
+    data = {'email': sys.argv[2]}
 
-req = requests.post(url, data=data)
-body = req.content
+    req = requests.post(url, data=data)
+    body = req.content
