@@ -14,7 +14,8 @@ if __name__ == "__main__":
 
     try:
         data = requests.get(url)
+        data.raise_for_status()
         cont = data.content
         print(data)
-    except urllib.error.HTTPError as e:
-        print(f"Error code: {e.code}")
+    except requests.exceptions.HTTPError as e:
+        print(f"Error code: {e.data.status_code}")
