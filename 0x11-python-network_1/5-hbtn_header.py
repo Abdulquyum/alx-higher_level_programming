@@ -8,7 +8,8 @@ import requests
 import sys
 
 
-url = sys.argv[1]
-data = requests.get(url)
-body = data.headers['X-Request-Id']
-print(body)
+if __name__ == "__main__":
+    url = sys.argv[1]
+    data = requests.get(url)
+    body = data.headers['X-Request-Id']
+    print(body)
