@@ -16,6 +16,6 @@ if __name__ == "__main__":
         data = requests.get(url)
         data.raise_for_status()
         cont = data.content
-        print(data)
+        print(cont)
     except requests.exceptions.HTTPError as e:
         print(f"Error code: {e.data.status_code}")
