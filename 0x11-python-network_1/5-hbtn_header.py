@@ -5,8 +5,10 @@ the value of the variable X-Request-Id in the response header
 """
 
 import requests
+import sys
 
 
-data = requests.get('https://alx-intranet.hbtn.io/status')
+url = sys.argv[1]
+data = requests.get(url)
 body = data.headers['X-Request-Id']
 print(body)
