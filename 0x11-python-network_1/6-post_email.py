@@ -14,4 +14,4 @@ if __name__ == "__main__":
     email = sys.argv[2]
 
     req = requests.post(url, data={'email': email})
-    body = req.content
+    print(f"Your email is: {email}")
