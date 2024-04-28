@@ -10,7 +10,7 @@ import sys
 
 
 url = sys.argv[1]
-email =sys.argv[2]
+data = {'email': sys.argv[2]}
 
-data = requests.post(url, data=email)
-body = data.content
+req = requests.post(url, data=data)
+body = req.content
