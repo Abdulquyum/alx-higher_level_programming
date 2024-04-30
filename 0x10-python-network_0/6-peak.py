@@ -12,11 +12,6 @@ def find_peak(list_of_integers):
 
     if len(list_of_integers) == 1:
         return list_of_integers[0]
-
-    peak = list_of_integers[0]
-    a = 1
-    while (a < len(list_of_integers)):
-        if peak < list_of_integers[a]:
-            peak = list_of_integers[a]
-            a += 1
-        return peak
+    
+    list_of_integers.sort()
+    return(list_of_integers[-1])
